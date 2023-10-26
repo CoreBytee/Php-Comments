@@ -1,0 +1,72 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #00509b;
+}
+.container {
+  width: 75%;
+  background-color: #002f5b;
+  padding: 40px;
+  border-radius: 40px;
+}
+.container iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.container .commentform form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+.container .commentform form input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  color: black;
+}
+.container .commentform form #name {
+  width: 30%;
+}
+.container .commentform form #email {
+  width: calc(70% - 10px);
+}
+.container .commentform form #comment {
+  width: 100%;
+  min-height: 100px;
+}
+.container .commentform form .commenterror {
+  height: 30px;
+  line-height: 30px;
+  color: red;
+}
+.container .comments {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #044684;
+  border-radius: 20px;
+}
+.container .comments .comment {
+  background-color: #002649;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.container .comments .comment .commentheader {
+  gap: 10px;
+  display: flex;
+  width: 100%;
+}
+.container .comments .comment .commentbody {
+  margin-top: 10px;
+  justify-self: flex-end;
+}
